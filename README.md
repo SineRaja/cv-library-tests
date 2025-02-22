@@ -1,36 +1,116 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## **CV Library - Frontend**
+🚀 A Next.js-based job listing platform that allows users to search for jobs by **location** or **industry**. The project is built with **TypeScript**, **React.js**, **Next.js**, and **SCSS**, and follows production-level best practices with optimized code.
 
-## Getting Started
+---
 
-First, run the development server:
+## **📌 Features**
+- **Job Search**
+  - Users can search jobs by **location** or **industry**.
+  - Live location suggestions using **debounced API calls**.
+- **Optimized UI/UX**
+  - Responsive and accessible UI with **SCSS & TailwindCSS**.
+  - Mobile-friendly **Tabs & Job Listings**.
+- **Internationalization**
+  - Supports **multiple languages** using `next-i18next`.
+- **High-Performance Architecture**
+  - **Lazy loading** of components.
+  - **Debounced search** to reduce unnecessary API calls.
+  - **Error handling** and **fallback UI** for robust reliability.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+---
+
+## **📂 Folder Structure**
+```
+cv-library-frontend/
+│── src/
+│   ├── components/        # Reusable UI components (Header, SearchBar, Tabs, JobList)
+│   ├── hooks/             # Custom React hooks (useSearch, useDebounce)
+│   ├── pages/             # Next.js pages (Home, Jobs)
+│   ├── services/          # API services (fetchLocations)
+│   ├── styles/            # SCSS stylesheets
+│   ├── utils/             # Helper functions and constants
+│── public/                # Static assets
+│── next.config.js         # Next.js configuration
+│── tsconfig.json          # TypeScript configuration
+│── README.md              # Project documentation
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## **🛠️ Tech Stack**
+| Technology  | Description |
+|-------------|------------|
+| **Next.js** | Framework for SSR and static site generation |
+| **React.js** | UI library for building components |
+| **TypeScript** | Strongly typed JavaScript |
+| **SCSS** | Stylesheets with modular support |
+| **Tailwind CSS** | Utility-first CSS framework |
+| **Axios** | HTTP client for API calls |
+| **next-i18next** | Internationalization support |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## **🚀 Getting Started**
+### **1️⃣ Prerequisites**
+- Install **Node.js** (v18+)
+- Install **npm** or **yarn**
 
-To learn more about Next.js, take a look at the following resources:
+### **2️⃣ Clone the Repository**
+```sh
+git clone https://github.com/SineRaja/cv-library-tests.git
+cd cv-library-frontend
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### **3️⃣ Install Dependencies**
+```sh
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### **4️⃣ Start the Development Server**
+```sh
+npm run dev
+```
+Visit **http://localhost:3000** in your browser.
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## **📋 API Services**
+- **fetchLocations(query)** → Fetches job locations from API (debounced).
+
+Example:
+```ts
+import { fetchLocations } from "../services/locationService";
+
+const locations = await fetchLocations("New York");
+console.log(locations); // ["New York", "London"]
+```
+
+---
+
+## **📌 Production Readiness**
+✔ **Optimized Performance**
+- Uses **Next.js automatic static optimization**.
+- Implements **code splitting & lazy loading**.
+
+✔ **Secure & Scalable**
+- Uses **TypeScript** for type safety.
+- Implements **error handling with Error Boundaries**.
+
+✔ **Mobile-First Design**
+- Fully responsive UI.
+- Optimized **job listings & search components** for mobile.
+
+
+✔ **Deployment-Ready**
+- Can be deployed to **Vercel** or **AWS** with simple commands:
+  ```sh
+  npm run build
+  npm start
+  ```
+
+---
+
+

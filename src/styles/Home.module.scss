@@ -1,0 +1,45 @@
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-grow: 1; 
+  }
+ 
+  .tabsContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--light-blue);
+  }
+  
+  
+  .footer {
+    width: 100%;
+    background: var(--dark-blue);
+    height: 206px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+@media (max-width: 768px) {
+  .main {
+    padding: 1.5rem 0;
+  }
+
+  .footer {
+    min-height: auto;  
+    padding: 1.5rem;
+  }
+}

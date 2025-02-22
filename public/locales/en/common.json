@@ -1,0 +1,14 @@
+{
+    "keywordsLabel": "Keywords / Job Title / Job Ref",
+    "keywordsPlaceholder": "e.g. Sales Executive",
+    "locationLabel": "Location",
+    "locationPlaceholder": "e.g. town or postcode",
+    "distanceLabel": "Distance",
+    "findJobsButton": "Find jobs now",
+    "jobsByLocation": "Jobs by Location",
+    "jobsByIndustry": "Jobs by Industry",
+    "searchResults": "Search Results",
+    "noResultsFound": "No results found",
+    "loading": "Loading...",
+    "error": "An error occurred. Please try again."
+  }

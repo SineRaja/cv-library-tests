@@ -1,0 +1,20 @@
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.logo {
+  width: 22rem;
+  height: 123px;
+  object-fit: contain;  
+}
+
+@media (max-width: 768px) {
+  .logo {
+    width: 15rem;
+    height: auto;  
+  }
+}
